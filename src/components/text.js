@@ -11,6 +11,8 @@
 
 // Part 2 : slider
 
+//  add react slider module 
+
 
 
 
