@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header';
-import Home from './components/home';
+import Home from './components/Home';
 import Detail from './components/Detail';
 import {
   BrowserRouter as Router,

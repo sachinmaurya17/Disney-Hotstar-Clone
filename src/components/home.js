@@ -1,9 +1,18 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import Viewer from './Viewer';
 import Movies from './Movies';
-function home() {
+import db from '../firebase';
+function Home() {
+ 
+  useEffect(() => {    
+    db.collection("movies").onSnapshot((snapshot)=>{
+        console.log(snapshot);
+    })
+  },[]);
+  
+
   return (
       <Container>
          <ImgSlider />
@@ -13,7 +22,7 @@ function home() {
   );
 }
 
-export default home;
+export default Home;
 
 const Container = styled.main`
   min-height:calc(100vh - 70px);

@@ -26,3 +26,5 @@
 
 
 // Part 4 : Movies List
+
+// npm install firebase -- connected with fire base
